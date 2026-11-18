@@ -34,14 +34,31 @@ class TestStampDecoding(unittest.TestCase):
         self.assertEqual(out["port"], 8443)
         self.assertEqual(out["url"], "https://host:8443/odoh")
 
-    def test_odoh_relay_con_hash_y_ruta(self):
+    def test_odoh_relay_sin_hashes(self):
+        # El 0x00 tras addr es un VLP vacio (conjunto vacio), no un hash.
         out = bl.decode_stamp("sdns://hQcAAAAAAAAAAAASb2RvaC1yZWxheS5udW1hLnJzBi9yZWxheQ")
         self.assertEqual(out["proto"], 0x85)
         self.assertEqual(out["addr"], "")
-        self.assertEqual(len(out["hashes"]), 1)
+        self.assertEqual(out["hashes"], [])
         self.assertEqual(out["hostname"], "odoh-relay.numa.rs")
         self.assertEqual(out["path"], "/relay")
         self.assertEqual(out["url"], "https://odoh-relay.numa.rs/relay")
+
+    def test_odoh_relay_con_hash_real(self):
+        # 0x85 || props || LP(addr) || VLP(hash SHA-256) || LP(host) || LP(path)
+        h = bytes(range(32))
+        hostport = b"odoh-relay.ejemplo.com"
+        path = b"/relay"
+        buf = (b"\x85" + b"\x07\x00\x00\x00\x00\x00\x00\x00"
+               + b"\x00"                                  # addr vacio
+               + bytes([0x80 | 32]) + h                   # VLP: quedan mas elementos
+               + bytes([32]) + h                          # ultimo hash (sin 0x80)
+               + bytes([len(hostport)]) + hostport
+               + bytes([len(path)]) + path)
+        stamp = "sdns://" + base64.urlsafe_b64encode(buf).decode().rstrip("=")
+        out = bl.decode_stamp(stamp)
+        self.assertEqual(out["hashes"], [h.hex(), h.hex()])
+        self.assertEqual(out["url"], "https://odoh-relay.ejemplo.com/relay")
 
     def test_props_sin_filtro(self):
         out = bl.decode_stamp("sdns://BQMAAAAAAAAADGRvaC50aWFyLmFwcAUvb2RvaA")

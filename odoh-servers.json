@@ -4,7 +4,7 @@
   "source": "DNSCrypt/dnscrypt-resolvers/master/v3/odoh-servers.md",
   "source_sha256": "e778bfe1a8f168815a1033a8e361b2cece97b0b8c88a0743b59f612d1328721b",
   "upstream_commit": "c0235164cbea04a4e9ac3282bace4693de376fc1",
-  "generated_at": "2026-11-18T09:31:21+00:00",
+  "generated_at": "2026-11-18T09:52:58+00:00",
   "count": 130,
   "entries": [
     {

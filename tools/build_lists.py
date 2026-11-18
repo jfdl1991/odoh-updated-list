@@ -89,10 +89,16 @@ def _read_vlp(buf: bytes, pos: int) -> tuple[list[bytes], int]:
     while True:
         length = buf[pos]
         pos += 1
-        items.append(buf[pos:pos + length])
-        pos += length
+        n = length & 0x7F          # el bit 0x80 solo marca "quedan mas elementos"
+        items.append(buf[pos:pos + n])
+        pos += n
         if not length & 0x80:
-            return items, pos
+            break
+    # Un conjunto vacio se codifica como un unico byte 0x00 (longitud 0):
+    # los hashes son SHA-256 (32 bytes), asi que una longitud 0 nunca es un hash real.
+    if items == [b""]:
+        items = []
+    return items, pos
 
 
 def _split_hostport(hostport: str) -> tuple[str, str]:
