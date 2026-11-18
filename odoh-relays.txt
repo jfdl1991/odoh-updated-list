@@ -1,0 +1,3 @@
+https://odoh-relay.edgecompute.app/
+https://odoh-relay.numa.rs/relay
+https://odoh-relay.sh2o.link/proxy

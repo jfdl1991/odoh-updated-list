@@ -1,0 +1,39 @@
+name: update-lists
+
+# Se ejecuta:
+#   - una vez al dia (schedule). En repos publicos GitHub Actions es gratis;
+#     el script sale temprano si la lista no cambio, asi que solo trabaja cuando hay novedad.
+#   - manualmente (workflow_dispatch).
+#   - cuando un servicio externo avisa (repository_dispatch), p. ej. un pinger gratuito.
+#   - al tocar el script o este workflow.
+
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [upstream-change]
+  push:
+    branches: [main]
+    paths:
+      - 'tools/**'
+      - '.github/workflows/update.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Regenerar listas (commit si hay cambios)
+        run: python tools/build_lists.py --commit --summary

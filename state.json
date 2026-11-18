@@ -1,0 +1,20 @@
+{
+  "upstream": {
+    "owner": "DNSCrypt",
+    "repo": "dnscrypt-resolvers",
+    "ref": "master"
+  },
+  "generated_at": "2026-11-18T09:31:21+00:00",
+  "lists": {
+    "odoh-relays": {
+      "raw_sha256": "f4718be434cc838e929aa10d4f3cb18d645f8ae4bcfa09ba3f88c4906cd70652",
+      "count": 3,
+      "upstream_commit": "fb9de448adf22c1bd4c2431a246bb6fa3e4a1d67"
+    },
+    "odoh-servers": {
+      "raw_sha256": "e778bfe1a8f168815a1033a8e361b2cece97b0b8c88a0743b59f612d1328721b",
+      "count": 130,
+      "upstream_commit": "c0235164cbea04a4e9ac3282bace4693de376fc1"
+    }
+  }
+}

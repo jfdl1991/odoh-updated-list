@@ -1,0 +1,127 @@
+"""Tests de build_lists.py (stdlib unittest, sin dependencias)."""
+import base64
+import json
+import os
+import sys
+import tempfile
+import unittest
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "tools"))
+import build_lists as bl  # noqa: E402
+
+
+class TestStampDecoding(unittest.TestCase):
+    """Casos tomados de las listas reales de DNSCrypt/dnscrypt-resolvers."""
+
+    def test_odoh_target_con_ruta(self):
+        # dnscry.pt-odoh-adelaide: props 7 (DNSSEC + sin logs + sin filtro)
+        out = bl.decode_stamp("sdns://BQcAAAAAAAAAD2FkbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5")
+        self.assertEqual(out["proto"], 0x05)
+        self.assertEqual(out["hostname"], "adl01.dnscry.pt")
+        self.assertEqual(out["port"], 443)
+        self.assertEqual(out["path"], "/dns-query")
+        self.assertEqual(out["url"], "https://adl01.dnscry.pt/dns-query")
+        self.assertTrue(out["dnssec"] and out["no_logs"] and out["no_filter"])
+
+    def test_odoh_target_con_puerto(self):
+        hostport = b"host:8443"
+        buf = (b"\x05" + b"\x03\x00\x00\x00\x00\x00\x00\x00"
+               + bytes([len(hostport)]) + hostport
+               + bytes([5]) + b"/odoh")
+        stamp = "sdns://" + base64.urlsafe_b64encode(buf).decode().rstrip("=")
+        out = bl.decode_stamp(stamp)
+        self.assertEqual(out["hostname"], "host")
+        self.assertEqual(out["port"], 8443)
+        self.assertEqual(out["url"], "https://host:8443/odoh")
+
+    def test_odoh_relay_con_hash_y_ruta(self):
+        out = bl.decode_stamp("sdns://hQcAAAAAAAAAAAASb2RvaC1yZWxheS5udW1hLnJzBi9yZWxheQ")
+        self.assertEqual(out["proto"], 0x85)
+        self.assertEqual(out["addr"], "")
+        self.assertEqual(len(out["hashes"]), 1)
+        self.assertEqual(out["hostname"], "odoh-relay.numa.rs")
+        self.assertEqual(out["path"], "/relay")
+        self.assertEqual(out["url"], "https://odoh-relay.numa.rs/relay")
+
+    def test_props_sin_filtro(self):
+        out = bl.decode_stamp("sdns://BQMAAAAAAAAADGRvaC50aWFyLmFwcAUvb2RvaA")
+        self.assertEqual(out["props"], 3)
+        self.assertTrue(out["dnssec"])
+        self.assertTrue(out["no_logs"])
+        self.assertFalse(out["no_filter"])
+
+    def test_protocolo_no_soportado(self):
+        with self.assertRaises(bl.StampError):
+            bl.decode_stamp("sdns://" + base64.urlsafe_b64encode(b"\x01\x00").decode())
+
+    def test_split_hostport_ipv6(self):
+        self.assertEqual(bl._split_hostport("[2001:db8::1]:8443"), ("2001:db8::1", "8443"))
+        self.assertEqual(bl._split_hostport("[2001:db8::1]"), ("2001:db8::1", "443"))
+        self.assertEqual(bl._split_hostport("ejemplo.com"), ("ejemplo.com", "443"))
+
+
+SAMPLE_MD = """# Oblivious DoH servers list
+
+Preample que no debe parsearse.
+urls = ['https://ejemplo.com']
+
+## target-uno
+
+Primera linea de descripcion.
+Segunda linea.
+https://sitio-ejemplo.com
+
+sdns://BQcAAAAAAAAAD2FkbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5
+
+## target-dos
+
+Otro target.
+sdns://BQMAAAAAAAAADGRvaC50aWFyLmFwcAUvb2RvaA
+"""
+
+
+class TestParseMarkdown(unittest.TestCase):
+    def test_parse_secciones(self):
+        entries = bl.parse_list_md(SAMPLE_MD, "odoh-target")
+        self.assertEqual([e["name"] for e in entries], ["target-uno", "target-dos"])
+        self.assertEqual(entries[0]["url"], "https://adl01.dnscry.pt/dns-query")
+        self.assertEqual(entries[0]["site"], "https://sitio-ejemplo.com")
+        self.assertEqual(entries[0]["description"],
+                         ["Primera linea de descripcion.", "Segunda linea."])
+        self.assertEqual(entries[1]["url"], "https://doh.tiar.app/odoh")
+
+    def test_preample_ignorado(self):
+        entries = bl.parse_list_md(SAMPLE_MD, "odoh-target")
+        self.assertNotIn("urls = ['https://ejemplo.com']",
+                         entries[0]["description"])
+
+
+class TestEndToEnd(unittest.TestCase):
+    def test_genera_los_tres_formatos(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            entries = bl.parse_list_md(SAMPLE_MD, "odoh-target")
+            sha = "a" * 64
+            bl.write_markdown("odoh-servers", bl.LISTS["odoh-servers"], entries, tmp)
+            bl.write_txt("odoh-servers", entries, tmp)
+            bl.write_json("odoh-servers", bl.LISTS["odoh-servers"], entries, tmp, sha, None)
+
+            with open(os.path.join(tmp, "odoh-servers.txt"), encoding="utf-8") as fh:
+                txt = fh.read()
+            self.assertEqual(txt.splitlines(),
+                             ["https://adl01.dnscry.pt/dns-query",
+                              "https://doh.tiar.app/odoh"])
+
+            with open(os.path.join(tmp, "odoh-servers.json"), encoding="utf-8") as fh:
+                data = json.load(fh)
+            self.assertEqual(data["count"], 2)
+            self.assertEqual(data["source_sha256"], sha)
+            self.assertEqual(data["entries"][0]["hostname"], "adl01.dnscry.pt")
+
+            with open(os.path.join(tmp, "odoh-servers.md"), encoding="utf-8") as fh:
+                md = fh.read()
+            self.assertIn("## target-uno", md)
+            self.assertIn("- URL: https://adl01.dnscry.pt/dns-query", md)
+
+
+if __name__ == "__main__":
+    unittest.main()
