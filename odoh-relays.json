@@ -1,15 +1,15 @@
 {
   "name": "odoh-relays",
-  "kind": "odoh-relay",
+  "kind": "proxy",
   "source": "DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md",
   "source_sha256": "f4718be434cc838e929aa10d4f3cb18d645f8ae4bcfa09ba3f88c4906cd70652",
   "upstream_commit": "fb9de448adf22c1bd4c2431a246bb6fa3e4a1d67",
-  "generated_at": "2026-11-18T09:52:56+00:00",
+  "generated_at": "2026-11-18T10:38:45+00:00",
   "count": 3,
   "entries": [
     {
       "name": "odohrelay-crypto-sx",
-      "kind": "odoh-relay",
+      "kind": "proxy",
       "description": [
         "crypto.sx ODoH relay.",
         "Available through servers in multiple locations around the world.",
@@ -17,59 +17,65 @@
       ],
       "site": "",
       "stamp": "sdns://hQcAAAAAAAAAAAAab2RvaC1yZWxheS5lZGdlY29tcHV0ZS5hcHABLw",
-      "proto": 133,
-      "props": 7,
       "dnssec": true,
       "no_logs": true,
       "no_filter": true,
-      "addr": "",
-      "hashes": [],
       "hostname": "odoh-relay.edgecompute.app",
       "port": 443,
       "path": "/",
-      "url": "https://odoh-relay.edgecompute.app/"
+      "url": "https://odoh-relay.edgecompute.app/",
+      "location": {
+        "city": null,
+        "country": null,
+        "anycast": true,
+        "source": "description"
+      }
     },
     {
       "name": "odohrelay-numa",
-      "kind": "odoh-relay",
+      "kind": "proxy",
       "description": [
         "Numa ODoH relay.",
         "Run by the Numa project on Hetzner in Falkenstein, Germany. Maintained by Razvan Dimescu. https://numa.rs"
       ],
       "site": "",
       "stamp": "sdns://hQcAAAAAAAAAAAASb2RvaC1yZWxheS5udW1hLnJzBi9yZWxheQ",
-      "proto": 133,
-      "props": 7,
       "dnssec": true,
       "no_logs": true,
       "no_filter": true,
-      "addr": "",
-      "hashes": [],
       "hostname": "odoh-relay.numa.rs",
       "port": 443,
       "path": "/relay",
-      "url": "https://odoh-relay.numa.rs/relay"
+      "url": "https://odoh-relay.numa.rs/relay",
+      "location": {
+        "city": null,
+        "country": "DE",
+        "anycast": false,
+        "source": "description"
+      }
     },
     {
       "name": "odohrelay-sh2o",
-      "kind": "odoh-relay",
+      "kind": "proxy",
       "description": [
         "sh2o ODoH relay.",
         "Server in Spain."
       ],
       "site": "",
       "stamp": "sdns://hQcAAAAAAAAAAAAUb2RvaC1yZWxheS5zaDJvLmxpbmsGL3Byb3h5",
-      "proto": 133,
-      "props": 7,
       "dnssec": true,
       "no_logs": true,
       "no_filter": true,
-      "addr": "",
-      "hashes": [],
       "hostname": "odoh-relay.sh2o.link",
       "port": 443,
       "path": "/proxy",
-      "url": "https://odoh-relay.sh2o.link/proxy"
+      "url": "https://odoh-relay.sh2o.link/proxy",
+      "location": {
+        "city": null,
+        "country": "ES",
+        "anycast": false,
+        "source": "description"
+      }
     }
   ]
 }

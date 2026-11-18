@@ -20,14 +20,13 @@ Ejemplo de entrada en el `.json`:
 ```json
 {
   "name": "odohrelay-numa",
-  "kind": "odoh-relay",
+  "kind": "proxy",
+  "location": { "city": null, "country": "DE", "anycast": false, "source": "description" },
   "stamp": "sdns://hQcAAAAAAAAAAAASb2RvaC1yZWxheS5udW1hLnJzBi9yZWxheQ",
   "url": "https://odoh-relay.numa.rs/relay",
   "hostname": "odoh-relay.numa.rs",
   "port": 443,
   "path": "/relay",
-  "addr": "",
-  "hashes": ["ab12..."],
   "dnssec": true,
   "no_logs": true,
   "no_filter": true,
@@ -40,12 +39,34 @@ Ejemplo de entrada en el `.json`:
 
 - El endpoint sale del **stamp**, no de la URL de "página del servicio" que a veces
   aparece en el `.md` original (por ejemplo `https://www.dnscry.pt` no es el endpoint).
+- `kind` es `target` o `proxy` (terminología del RFC 9230), derivado del protocolo
+  del stamp (`0x05` / `0x85`).
 - `dnssec` / `no_logs` / `no_filter` salen de los bits de `props` del stamp
   (1 = DNSSEC, 2 = sin logs, 4 = sin filtro).
-- `addr` y `hashes` solo están en relays: son la IP de bootstrap y los hashes de
-  certificado (cert pinning). No forman parte de la URL.
-- Los relays (`0x85`) y los targets (`0x05`) van por separado: un relay solo debe
+- No se incluyen `proto`, `props`, `addr` ni `hashes`: son campos internos del
+  formato de stamp que no aportan nada a una URL (el `stamp` original queda en el
+  campo `stamp`, así que nada se pierde).
+- Los relays (`kind: "proxy"`) y los targets van por separado: un proxy solo debe
   combinarse con un target ODoH, nunca con un servidor DNSCrypt.
+
+### Ubicación
+
+El campo `location` es **metadato declarado por el operador**, no geolocalización
+por IP. Se deriva de dos fuentes y nunca se adivina:
+
+| `source` | Significado |
+|---|---|
+| `name` | ciudad tomada del nombre/descripción y país resuelto con `tools/locations.json` |
+| `description` | país o "anycast" detectado en el texto de la descripción |
+| `unknown` | el operador no dice dónde está |
+
+- `country` es ISO 3166-1 alpha-2 (`"AU"`, `"DE"`, ...) o `null` si no se sabe.
+- `anycast` es `true` cuando el texto indica distribución global (Cloudflare,
+  crypto.sx, tiarap...).
+- `tools/locations.json` es una tabla curada de 110 ciudades; una muestra de 22 se
+  verificó contra las fichas oficiales de dnscry.pt (`/public-resolvers/<codigo>`),
+  todas correctas. Si el repo upstream añade una ciudad nueva, el país queda en
+  `null` hasta que se añada a la tabla (y los tests avisan de las ciudades sin país).
 
 ## Cómo se actualiza
 

@@ -11,6 +11,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://adl01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Adelaide, AU
 - Stamp: `sdns://BQcAAAAAAAAAD2FkbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-allendale
@@ -20,6 +21,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://aqx01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Allendale, US
 - Stamp: `sdns://BQcAAAAAAAAAD2FxeDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-allentown
@@ -29,6 +31,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://abe01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Allentown, US
 - Stamp: `sdns://BQcAAAAAAAAAD2FiZTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-amsterdam
@@ -38,6 +41,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ams01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Amsterdam, NL
 - Stamp: `sdns://BQcAAAAAAAAAD2FtczAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-amsterdam02
@@ -47,6 +51,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ams02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Amsterdam, NL
 - Stamp: `sdns://BQcAAAAAAAAAD2FtczAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-amsterdam03
@@ -56,6 +61,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ams03.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Amsterdam, NL
 - Stamp: `sdns://BQcAAAAAAAAAD2FtczAzLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-ashburn
@@ -65,6 +71,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://abn01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Ashburn, US
 - Stamp: `sdns://BQcAAAAAAAAAD2FibjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-atlanta
@@ -74,6 +81,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://atl01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Atlanta, US
 - Stamp: `sdns://BQcAAAAAAAAAD2F0bDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-auckland
@@ -83,6 +91,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://akl01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Auckland, NZ
 - Stamp: `sdns://BQcAAAAAAAAAD2FrbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-bengaluru
@@ -92,6 +101,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://blr01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Bengaluru, IN
 - Stamp: `sdns://BQcAAAAAAAAAD2JscjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-berkeleysprings
@@ -101,6 +111,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://bei01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Berkeley Springs, US
 - Stamp: `sdns://BQcAAAAAAAAAD2JlaTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-bratislava
@@ -110,6 +121,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://bts01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Bratislava, SK
 - Stamp: `sdns://BQcAAAAAAAAAD2J0czAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-bremen
@@ -119,6 +131,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://bre01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Bremen, DE
 - Stamp: `sdns://BQcAAAAAAAAAD2JyZTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-brisbane
@@ -128,6 +141,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://bne01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Brisbane, AU
 - Stamp: `sdns://BQcAAAAAAAAAD2JuZTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-bucharest
@@ -137,6 +151,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://buh01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Bucharest, RO
 - Stamp: `sdns://BQcAAAAAAAAAD2J1aDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-calgary
@@ -146,6 +161,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://yyc01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Calgary, CA
 - Stamp: `sdns://BQcAAAAAAAAAD3l5YzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-capetown
@@ -155,6 +171,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://cpt01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Cape Town, ZA
 - Stamp: `sdns://BQcAAAAAAAAAD2NwdDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-capetown02
@@ -164,6 +181,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://cpt02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Cape Town, ZA
 - Stamp: `sdns://BQcAAAAAAAAAD2NwdDAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-chicago
@@ -173,6 +191,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ord01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Chicago, US
 - Stamp: `sdns://BQcAAAAAAAAAD29yZDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-chisinau
@@ -182,6 +201,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://kiv01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Chișinău, MD
 - Stamp: `sdns://BQcAAAAAAAAAD2tpdjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-copenhagen
@@ -191,6 +211,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://cph01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Copenhagen, DK
 - Stamp: `sdns://BQcAAAAAAAAAD2NwaDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-coventry
@@ -200,6 +221,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://cvt01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Coventry, GB
 - Stamp: `sdns://BQcAAAAAAAAAD2N2dDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-dallas
@@ -209,6 +231,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://dfw02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Dallas, US
 - Stamp: `sdns://BQcAAAAAAAAAD2RmdzAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-denver
@@ -218,6 +241,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://den01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Denver, US
 - Stamp: `sdns://BQcAAAAAAAAAD2RlbjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-detroit
@@ -227,6 +251,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://dtw01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Detroit, US
 - Stamp: `sdns://BQcAAAAAAAAAD2R0dzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-dhaka
@@ -236,6 +261,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://dac01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Dhaka, BD
 - Stamp: `sdns://BQcAAAAAAAAAD2RhYzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-dublin
@@ -245,6 +271,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://dub01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Dublin, IE
 - Stamp: `sdns://BQcAAAAAAAAAD2R1YjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-dusseldorf
@@ -254,6 +281,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://dus01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Düsseldorf, DE
 - Stamp: `sdns://BQcAAAAAAAAAD2R1czAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-dusseldorf02
@@ -263,6 +291,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://dus02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Düsseldorf, DE
 - Stamp: `sdns://BQcAAAAAAAAAD2R1czAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-dusseldorf03
@@ -272,6 +301,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://dus03.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Düsseldorf, DE
 - Stamp: `sdns://BQcAAAAAAAAAD2R1czAzLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-ebenecity02
@@ -281,6 +311,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mru02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Ebène City, MU
 - Stamp: `sdns://BQcAAAAAAAAAD21ydTAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-eygelshoven
@@ -290,6 +321,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://eyg01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Eygelshoven, NL
 - Stamp: `sdns://BQcAAAAAAAAAD2V5ZzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-flint
@@ -299,6 +331,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://fnt01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Flint, US
 - Stamp: `sdns://BQcAAAAAAAAAD2ZudDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-frankfurt
@@ -308,6 +341,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://fra01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Frankfurt, DE
 - Stamp: `sdns://BQcAAAAAAAAAD2ZyYTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-frankfurt02
@@ -317,6 +351,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://fra02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Frankfurt, DE
 - Stamp: `sdns://BQcAAAAAAAAAD2ZyYTAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-fremont02
@@ -326,6 +361,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://fet02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Fremont, US
 - Stamp: `sdns://BQcAAAAAAAAAD2ZldDAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-gdansk
@@ -335,6 +371,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://gdn01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Gdańsk, PL
 - Stamp: `sdns://BQcAAAAAAAAAD2dkbjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-geneva
@@ -344,6 +381,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://gva01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Geneva, CH
 - Stamp: `sdns://BQcAAAAAAAAAD2d2YTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-grandrapids
@@ -353,6 +391,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://grr01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Grand Rapids, US
 - Stamp: `sdns://BQcAAAAAAAAAD2dycjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-hafnarfjordur
@@ -362,6 +401,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://haf01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Hafnarfjordur, IS
 - Stamp: `sdns://BQcAAAAAAAAAD2hhZjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-halifax
@@ -371,6 +411,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://yhz01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Halifax, CA
 - Stamp: `sdns://BQcAAAAAAAAAD3loejAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-hanoi
@@ -380,6 +421,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://han01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Hanoi, VN
 - Stamp: `sdns://BQcAAAAAAAAAD2hhbjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-helsinki
@@ -389,6 +431,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://hel01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Helsinki, FI
 - Stamp: `sdns://BQcAAAAAAAAAD2hlbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-hochiminhcity
@@ -398,6 +441,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sgn01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Ho-Chi-Minh City, VN
 - Stamp: `sdns://BQcAAAAAAAAAD3NnbjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-hongkong
@@ -407,6 +451,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://hkg01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Hong Kong, HK
 - Stamp: `sdns://BQcAAAAAAAAAD2hrZzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-hongkong02
@@ -416,6 +461,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://hkg02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Hong Kong, HK
 - Stamp: `sdns://BQcAAAAAAAAAD2hrZzAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-hongkong03
@@ -425,6 +471,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://hkg03.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Hong Kong, HK
 - Stamp: `sdns://BQcAAAAAAAAAD2hrZzAzLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-houston
@@ -434,6 +481,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://iah01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Houston, US
 - Stamp: `sdns://BQcAAAAAAAAAD2lhaDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-hudiksvall
@@ -443,6 +491,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://huv01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Hudiksvall, SE
 - Stamp: `sdns://BQcAAAAAAAAAD2h1djAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-ikeja
@@ -452,6 +501,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://los02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Ikeja, NG
 - Stamp: `sdns://BQcAAAAAAAAAD2xvczAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-indianapolis
@@ -461,6 +511,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ind01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Indianapolis, US
 - Stamp: `sdns://BQcAAAAAAAAAD2luZDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-islamabad
@@ -470,6 +521,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://isb01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Islamabad, PK
 - Stamp: `sdns://BQcAAAAAAAAAD2lzYjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-istanbul
@@ -479,6 +531,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ist01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Istanbul, TR
 - Stamp: `sdns://BQcAAAAAAAAAD2lzdDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-jacksonville
@@ -488,6 +541,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://jax01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Jacksonville, US
 - Stamp: `sdns://BQcAAAAAAAAAD2pheDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-jakarta
@@ -497,6 +551,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://jkt01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Jakarta, ID
 - Stamp: `sdns://BQcAAAAAAAAAD2prdDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-johannesburg
@@ -506,6 +561,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://jnb01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Johannesburg, ZA
 - Stamp: `sdns://BQcAAAAAAAAAD2puYjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-johannesburg02
@@ -515,6 +571,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://jnb02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Johannesburg, ZA
 - Stamp: `sdns://BQcAAAAAAAAAD2puYjAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-johor
@@ -524,6 +581,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://jhb01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Johor, MY
 - Stamp: `sdns://BQcAAAAAAAAAD2poYjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-kansascity
@@ -533,6 +591,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mci01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Kansas City, US
 - Stamp: `sdns://BQcAAAAAAAAAD21jaTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-kyiv02
@@ -542,6 +601,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://iev02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Kyiv, UA
 - Stamp: `sdns://BQcAAAAAAAAAD2lldjAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-lasvegas
@@ -551,6 +611,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://las01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Las Vegas, US
 - Stamp: `sdns://BQcAAAAAAAAAD2xhczAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-libertylake
@@ -560,6 +621,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://llk01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Liberty Lake, US
 - Stamp: `sdns://BQcAAAAAAAAAD2xsazAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-lisbon
@@ -569,6 +631,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://lis01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Lisbon, PT
 - Stamp: `sdns://BQcAAAAAAAAAD2xpczAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-lisbon02
@@ -578,6 +641,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://lis02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Lisbon, PT
 - Stamp: `sdns://BQcAAAAAAAAAD2xpczAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-london
@@ -587,6 +651,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://lon01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: London, GB
 - Stamp: `sdns://BQcAAAAAAAAAD2xvbjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-losangeles
@@ -596,6 +661,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://lax01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Los Angeles, US
 - Stamp: `sdns://BQcAAAAAAAAAD2xheDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-losangeles02
@@ -605,6 +671,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://lax02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Los Angeles, US
 - Stamp: `sdns://BQcAAAAAAAAAD2xheDAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-madrid
@@ -614,6 +681,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mad01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Madrid, ES
 - Stamp: `sdns://BQcAAAAAAAAAD21hZDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-manchester
@@ -623,6 +691,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://man01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Manchester, GB
 - Stamp: `sdns://BQcAAAAAAAAAD21hbjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-marseille
@@ -632,6 +701,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mrs01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Marseille, FR
 - Stamp: `sdns://BQcAAAAAAAAAD21yczAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-melbourne
@@ -641,6 +711,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mel01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Melbourne, AU
 - Stamp: `sdns://BQcAAAAAAAAAD21lbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-miami
@@ -650,6 +721,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mia01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Miami, US
 - Stamp: `sdns://BQcAAAAAAAAAD21pYTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-milan
@@ -659,6 +731,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mil01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Milan, IT
 - Stamp: `sdns://BQcAAAAAAAAAD21pbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-molln
@@ -668,6 +741,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://moe01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Mölln, DE
 - Stamp: `sdns://BQcAAAAAAAAAD21vZTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-montreal
@@ -677,6 +751,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ymq01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Montreal, CA
 - Stamp: `sdns://BQcAAAAAAAAAD3ltcTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-moscow
@@ -686,6 +761,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://mow01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Moscow, RU
 - Stamp: `sdns://BQcAAAAAAAAAD21vdzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-mumbai02
@@ -695,6 +771,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://bom02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Mumbai, IN
 - Stamp: `sdns://BQcAAAAAAAAAD2JvbTAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-munich
@@ -704,6 +781,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://muc01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Munich, DE
 - Stamp: `sdns://BQcAAAAAAAAAD211YzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-newcastle
@@ -713,6 +791,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ncl01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Newcastle, GB
 - Stamp: `sdns://BQcAAAAAAAAAD25jbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-newyork
@@ -722,6 +801,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://nyc01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: New York, US
 - Stamp: `sdns://BQcAAAAAAAAAD255YzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-nuremberg
@@ -731,6 +811,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://nue01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Nuremberg, DE
 - Stamp: `sdns://BQcAAAAAAAAAD251ZTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-ogden
@@ -740,6 +821,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ogd01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Ogden, US
 - Stamp: `sdns://BQcAAAAAAAAAD29nZDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-oradea
@@ -749,6 +831,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://omr01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Oradea, RO
 - Stamp: `sdns://BQcAAAAAAAAAD29tcjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-ottoville
@@ -758,6 +841,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ott01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Ottoville, US
 - Stamp: `sdns://BQcAAAAAAAAAD290dDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-paris
@@ -767,6 +851,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://par01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Paris, FR
 - Stamp: `sdns://BQcAAAAAAAAAD3BhcjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-perth
@@ -776,6 +861,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://per01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Perth, AU
 - Stamp: `sdns://BQcAAAAAAAAAD3BlcjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-phoenix
@@ -785,6 +871,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://phx01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Phoenix, US
 - Stamp: `sdns://BQcAAAAAAAAAD3BoeDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-portedwards
@@ -794,6 +881,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://ped01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Port Edwards, US
 - Stamp: `sdns://BQcAAAAAAAAAD3BlZDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-portland
@@ -803,6 +891,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://pdx01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Portland, US
 - Stamp: `sdns://BQcAAAAAAAAAD3BkeDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-prague
@@ -812,6 +901,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://prg01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Prague, CZ
 - Stamp: `sdns://BQcAAAAAAAAAD3ByZzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-redditch
@@ -821,6 +911,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://rdd01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Redditch, GB
 - Stamp: `sdns://BQcAAAAAAAAAD3JkZDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-riga
@@ -830,6 +921,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://rix01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Riga, LV
 - Stamp: `sdns://BQcAAAAAAAAAD3JpeDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-saltlakecity
@@ -839,6 +931,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://slc01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Salt Lake City, US
 - Stamp: `sdns://BQcAAAAAAAAAD3NsYzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-sandefjord
@@ -848,6 +941,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://trf01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Sandefjord, NO
 - Stamp: `sdns://BQcAAAAAAAAAD3RyZjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-sanjose
@@ -857,6 +951,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sjc02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: San Jose, US
 - Stamp: `sdns://BQcAAAAAAAAAD3NqYzAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-santaclara
@@ -866,6 +961,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sjc01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Santa Clara, US
 - Stamp: `sdns://BQcAAAAAAAAAD3NqYzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-saopaulo
@@ -875,6 +971,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sao01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: São Paulo, BR
 - Stamp: `sdns://BQcAAAAAAAAAD3NhbzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-seattle
@@ -884,6 +981,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sea01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Seattle, US
 - Stamp: `sdns://BQcAAAAAAAAAD3NlYTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-seoul02
@@ -893,6 +991,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sel02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Seoul, KR
 - Stamp: `sdns://BQcAAAAAAAAAD3NlbDAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-singapore
@@ -902,6 +1001,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sin03.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Singapore, SG
 - Stamp: `sdns://BQcAAAAAAAAAD3NpbjAzLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-singapore02
@@ -911,6 +1011,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sin02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Singapore, SG
 - Stamp: `sdns://BQcAAAAAAAAAD3NpbjAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-sofia
@@ -920,6 +1021,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sof01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Sofia, BG
 - Stamp: `sdns://BQcAAAAAAAAAD3NvZjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-spokane
@@ -929,6 +1031,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://geg01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Spokane, US
 - Stamp: `sdns://BQcAAAAAAAAAD2dlZzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-stockholm
@@ -938,6 +1041,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sto01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Stockholm, SE
 - Stamp: `sdns://BQcAAAAAAAAAD3N0bzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-stockholm02
@@ -947,6 +1051,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://sto02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Stockholm, SE
 - Stamp: `sdns://BQcAAAAAAAAAD3N0bzAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-sydney02
@@ -956,6 +1061,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://syd02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Sydney, AU
 - Stamp: `sdns://BQcAAAAAAAAAD3N5ZDAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-taipeh
@@ -965,6 +1071,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tpe01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Taipeh, TW
 - Stamp: `sdns://BQcAAAAAAAAAD3RwZTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-tallinn
@@ -974,6 +1081,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tll01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Tallinn, EE
 - Stamp: `sdns://BQcAAAAAAAAAD3RsbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-tampa
@@ -983,6 +1091,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tpa01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Tampa, US
 - Stamp: `sdns://BQcAAAAAAAAAD3RwYTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-taos
@@ -992,6 +1101,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tsm01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Taos, US
 - Stamp: `sdns://BQcAAAAAAAAAD3RzbTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-tbilisi
@@ -1001,6 +1111,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tbs01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Tbilisi, GE
 - Stamp: `sdns://BQcAAAAAAAAAD3RiczAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-thessaloniki
@@ -1010,6 +1121,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://skg01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Thessaloniki, GR
 - Stamp: `sdns://BQcAAAAAAAAAD3NrZzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-timisoara
@@ -1019,6 +1131,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tsr01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Timișoara, RO
 - Stamp: `sdns://BQcAAAAAAAAAD3RzcjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-tirana
@@ -1028,6 +1141,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tia01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Tirana, AL
 - Stamp: `sdns://BQcAAAAAAAAAD3RpYTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-tokyo
@@ -1037,6 +1151,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tyo03.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Tokyo, JP
 - Stamp: `sdns://BQcAAAAAAAAAD3R5bzAzLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-tokyo02
@@ -1046,6 +1161,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tyo02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Tokyo, JP
 - Stamp: `sdns://BQcAAAAAAAAAD3R5bzAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-toronto
@@ -1055,6 +1171,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://yyz01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Toronto, CA
 - Stamp: `sdns://BQcAAAAAAAAAD3l5ejAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-toronto02
@@ -1064,6 +1181,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://yyz02.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Toronto, CA
 - Stamp: `sdns://BQcAAAAAAAAAD3l5ejAyLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-tuusula
@@ -1073,6 +1191,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://tuu01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Tuusula, FI
 - Stamp: `sdns://BQcAAAAAAAAAD3R1dTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-valdivia
@@ -1082,6 +1201,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://zal01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Valdivia, CL
 - Stamp: `sdns://BQcAAAAAAAAAD3phbDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-vancouver
@@ -1091,6 +1211,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://yvr01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Vancouver, CA
 - Stamp: `sdns://BQcAAAAAAAAAD3l2cjAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-vienna
@@ -1100,6 +1221,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://vie01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Vienna, AT
 - Stamp: `sdns://BQcAAAAAAAAAD3ZpZTAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-vilnius
@@ -1109,6 +1231,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://vno01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Vilnius, LT
 - Stamp: `sdns://BQcAAAAAAAAAD3ZubzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-warsaw
@@ -1118,6 +1241,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://waw01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Warsaw, PL
 - Stamp: `sdns://BQcAAAAAAAAAD3dhdzAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## dnscry.pt-odoh-zurich
@@ -1127,6 +1251,7 @@ Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redire
 
 - URL: https://zrh01.dnscry.pt/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: Zürich, CH
 - Stamp: `sdns://BQcAAAAAAAAAD3pyaDAxLmRuc2NyeS5wdAovZG5zLXF1ZXJ5`
 
 ## odoh-cloudflare
@@ -1137,6 +1262,7 @@ Operated by Cloudflare. https://cloudflare.com
 
 - URL: https://odoh.cloudflare-dns.com/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: anycast (multiples ubicaciones)
 - Stamp: `sdns://BQcAAAAAAAAAF29kb2guY2xvdWRmbGFyZS1kbnMuY29tCi9kbnMtcXVlcnk`
 
 ## odoh-crypto-sx
@@ -1148,6 +1274,7 @@ Maintained by Frank Denis. Service page: https://crypto.sx
 
 - URL: https://odoh.crypto.sx/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: anycast (multiples ubicaciones)
 - Stamp: `sdns://BQcAAAAAAAAADm9kb2guY3J5cHRvLnN4Ci9kbnMtcXVlcnk`
 
 ## odoh-id-gmail
@@ -1158,6 +1285,7 @@ Maintained by id-gmail / Tiarap. Service page: https://tiarap.org/
 
 - URL: https://doh.tiar.app/odoh
 - Flags: DNSSEC, sin logs
+- Ubicacion: SG
 - Stamp: `sdns://BQMAAAAAAAAADGRvaC50aWFyLmFwcAUvb2RvaA`
 
 ## odoh-snowstorm
@@ -1168,6 +1296,7 @@ Operated by Snowstorm. Service page: https://snowstorm.net/
 
 - URL: https://dope.snowstorm.love/dns-query
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: desconocida
 - Stamp: `sdns://BQcAAAAAAAAAE2RvcGUuc25vd3N0b3JtLmxvdmUKL2Rucy1xdWVyeQ`
 
 ## odoh-tiarap.org
@@ -1179,5 +1308,6 @@ Maintained by id-gmail / Tiarap. Service page: https://tiarap.org/
 
 - URL: https://doh.tiarap.org/odoh
 - Flags: DNSSEC, sin logs
+- Ubicacion: anycast (multiples ubicaciones)
 - Stamp: `sdns://BQMAAAAAAAAADmRvaC50aWFyYXAub3JnBS9vZG9o`
 

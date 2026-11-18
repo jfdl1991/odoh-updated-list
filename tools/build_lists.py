@@ -29,6 +29,7 @@ import re
 import struct
 import subprocess
 import sys
+import unicodedata
 import urllib.request
 from datetime import datetime, timezone
 
@@ -50,20 +51,95 @@ PROTO_ODOH_RELAY = 0x85
 LISTS: dict[str, dict] = {
     "odoh-relays": {
         "source_path": "v3/odoh-relays.md",
-        "kind": "odoh-relay",
+        "kind": "proxy",
         "title": "ODoH relays",
-        "expected_proto": PROTO_ODOH_RELAY,
     },
     "odoh-servers": {
         "source_path": "v3/odoh-servers.md",
-        "kind": "odoh-target",
+        "kind": "target",
         "title": "ODoH targets",
-        "expected_proto": PROTO_ODOH_TARGET,
     },
 }
 
+# Campos del formato de stamp que no se exponen en las salidas: el protocolo
+# queda en `kind` (target/proxy, terminologia del RFC 9230), `props` se desglosa
+# en dnssec/no_logs/no_filter, y addr/hashes no existen en ODoH (solo son utiles
+# en DNSCrypt/DoH: IP de bootstrap y cert pinning). El stamp original queda en
+# el campo `stamp`, asi que nada se pierde.
+INTERNAL_STAMP_FIELDS = ("proto", "props", "addr", "hashes")
+
 SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")
 STAMP_RE = re.compile(r"^sdns://[A-Za-z0-9_\-]+=*\s*$")
+CITY_RE = re.compile(r"^dnscry\.pt\s+(.+?)(?:\s+\d{2})?\s+ODoH target\.$")
+ANYCAST_RE = re.compile(
+    r"(multiple locations|around the world|cloudflare-cached|anycast|"
+    r"globally distributed|edge network)", re.I)
+
+# Nombres de pais -> ISO 3166-1 alpha-2, para entradas cuya ubicacion solo
+# aparece en el texto de la descripcion (operadores que no son dnscry.pt).
+COUNTRY_NAMES = {
+    "australia": "AU", "austria": "AT", "bangladesh": "BD", "belgium": "BE",
+    "brazil": "BR", "canada": "CA", "chile": "CL", "colombia": "CO",
+    "czechia": "CZ", "czech republic": "CZ", "denmark": "DK", "finland": "FI",
+    "france": "FR", "germany": "DE", "hong kong": "HK", "iceland": "IS",
+    "india": "IN", "indonesia": "ID", "ireland": "IE", "italy": "IT",
+    "japan": "JP", "latvia": "LV", "malaysia": "MY", "mauritius": "MU",
+    "moldova": "MD", "netherlands": "NL", "new zealand": "NZ", "nigeria": "NG",
+    "norway": "NO", "pakistan": "PK", "poland": "PL", "portugal": "PT",
+    "romania": "RO", "singapore": "SG", "slovakia": "SK", "slovenia": "SI",
+    "south africa": "ZA", "spain": "ES", "sweden": "SE", "switzerland": "CH",
+    "ukraine": "UA", "united kingdom": "GB", "united states": "US",
+    "vietnam": "VN",
+}
+
+LOCATIONS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "locations.json")
+
+
+def normalize_city(name: str) -> str:
+    """Minusculas, sin tildes y con espacios colapsados."""
+    decomposed = unicodedata.normalize("NFKD", name)
+    without_accents = "".join(c for c in decomposed if not unicodedata.combining(c))
+    return re.sub(r"\s+", " ", without_accents.strip().lower())
+
+
+def load_locations() -> dict:
+    """Ciudad normalizada -> {"country": ISO 3166-1 alpha-2}."""
+    if not os.path.exists(LOCATIONS_PATH):
+        return {}
+    with open(LOCATIONS_PATH, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def derive_location(entry: dict, locations: dict) -> dict:
+    """Ubicacion declarada por el operador. Nunca se infiere de la IP ni se adivina.
+
+    `source` indica de donde salio: "name" (ciudad en la descripcion + pais en la
+    tabla), "description" (pais o anycast en el texto) o "unknown".
+    """
+    city = None
+    country = None
+    if entry["description"]:
+        match = CITY_RE.match(entry["description"][0])
+        if match:
+            city = match.group(1).strip()
+            info = locations.get(normalize_city(city))
+            country = info["country"] if info else None
+
+    text = " ".join(entry["description"])
+    anycast = bool(ANYCAST_RE.search(text))
+    if not country:
+        for name, code in COUNTRY_NAMES.items():
+            if re.search(rf"\b{re.escape(name)}\b", text, re.I):
+                country = code
+                break
+
+    if city and country:
+        source = "name"
+    elif anycast or country:
+        source = "description"
+    else:
+        source = "unknown"
+    return {"city": city, "country": country, "anycast": anycast, "source": source}
 
 
 class StampError(ValueError):
@@ -204,6 +280,8 @@ def parse_list_md(text: str, kind: str) -> list[dict]:
     for entry in entries:
         if entry["stamp"]:
             entry.update(decode_stamp(entry["stamp"]))
+            for field in INTERNAL_STAMP_FIELDS:
+                entry.pop(field, None)
     return entries
 
 
@@ -222,6 +300,20 @@ def _flags_line(entry: dict) -> str:
     return ", ".join(flags) if flags else "sin anotaciones"
 
 
+def _location_line(entry: dict) -> str:
+    loc = entry.get("location") or {}
+    if loc.get("anycast"):
+        base = "anycast (multiples ubicaciones)"
+        if loc.get("country"):
+            base += f", {loc['country']}"
+        return base
+    if loc.get("city") and loc.get("country"):
+        return f"{loc['city']}, {loc['country']}"
+    if loc.get("country"):
+        return loc["country"]
+    return "desconocida"
+
+
 def write_markdown(list_key: str, cfg: dict, entries: list[dict], outdir: str) -> None:
     path = os.path.join(outdir, f"{list_key}.md")
     with open(path, "w", encoding="utf-8", newline="\n") as fh:
@@ -237,6 +329,7 @@ def write_markdown(list_key: str, cfg: dict, entries: list[dict], outdir: str) -
                 fh.write("\n")
             fh.write(f"- URL: {entry['url']}\n")
             fh.write(f"- Flags: {_flags_line(entry)}\n")
+            fh.write(f"- Ubicacion: {_location_line(entry)}\n")
             fh.write(f"- Stamp: `{entry['stamp']}`\n\n")
 
 
@@ -326,6 +419,9 @@ def build(list_key: str, cfg: dict, outdir: str, offline: str | None,
         raise SystemExit(f"[{list_key}] entradas sin stamp: {missing}")
 
     commit_sha = fetch_upstream_commit(cfg["source_path"]) if with_commit_sha else None
+    locations = load_locations()
+    for entry in entries:
+        entry["location"] = derive_location(entry, locations)
     write_markdown(list_key, cfg, entries, outdir)
     write_txt(list_key, entries, outdir)
     write_json(list_key, cfg, entries, outdir, sha256, commit_sha)

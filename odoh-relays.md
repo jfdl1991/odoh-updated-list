@@ -12,6 +12,7 @@ Runs on Fastly Compute. Maintained by Frank Denis. https://fastly.com
 
 - URL: https://odoh-relay.edgecompute.app/
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: anycast (multiples ubicaciones)
 - Stamp: `sdns://hQcAAAAAAAAAAAAab2RvaC1yZWxheS5lZGdlY29tcHV0ZS5hcHABLw`
 
 ## odohrelay-numa
@@ -21,6 +22,7 @@ Run by the Numa project on Hetzner in Falkenstein, Germany. Maintained by Razvan
 
 - URL: https://odoh-relay.numa.rs/relay
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: DE
 - Stamp: `sdns://hQcAAAAAAAAAAAASb2RvaC1yZWxheS5udW1hLnJzBi9yZWxheQ`
 
 ## odohrelay-sh2o
@@ -30,5 +32,6 @@ Server in Spain.
 
 - URL: https://odoh-relay.sh2o.link/proxy
 - Flags: DNSSEC, sin logs, sin filtro
+- Ubicacion: ES
 - Stamp: `sdns://hQcAAAAAAAAAAAAUb2RvaC1yZWxheS5zaDJvLmxpbmsGL3Byb3h5`
 

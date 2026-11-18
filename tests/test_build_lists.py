@@ -116,7 +116,7 @@ class TestParseMarkdown(unittest.TestCase):
 class TestEndToEnd(unittest.TestCase):
     def test_genera_los_tres_formatos(self):
         with tempfile.TemporaryDirectory() as tmp:
-            entries = bl.parse_list_md(SAMPLE_MD, "odoh-target")
+            entries = bl.parse_list_md(SAMPLE_MD, bl.LISTS["odoh-servers"]["kind"])
             sha = "a" * 64
             bl.write_markdown("odoh-servers", bl.LISTS["odoh-servers"], entries, tmp)
             bl.write_txt("odoh-servers", entries, tmp)
@@ -133,11 +133,81 @@ class TestEndToEnd(unittest.TestCase):
             self.assertEqual(data["count"], 2)
             self.assertEqual(data["source_sha256"], sha)
             self.assertEqual(data["entries"][0]["hostname"], "adl01.dnscry.pt")
+            # los campos internos del formato stamp no se exponen
+            for key in ("proto", "props", "addr", "hashes"):
+                self.assertNotIn(key, data["entries"][0])
+            self.assertEqual(data["entries"][0]["kind"], "target")
 
             with open(os.path.join(tmp, "odoh-servers.md"), encoding="utf-8") as fh:
                 md = fh.read()
             self.assertIn("## target-uno", md)
             self.assertIn("- URL: https://adl01.dnscry.pt/dns-query", md)
+
+
+class TestLocation(unittest.TestCase):
+    """La ubicacion se deriva del texto/nombre, nunca se infiere de la IP."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.locations = bl.load_locations()
+
+    def _loc(self, name, desc):
+        return bl.derive_location({"name": name, "description": desc}, self.locations)
+
+    def test_ciudad_y_pais_de_dnscry_pt(self):
+        loc = self._loc("dnscry.pt-odoh-adelaide",
+                        ["dnscry.pt Adelaide ODoH target.",
+                         "Operated by dnscry.pt. No query logs."])
+        self.assertEqual(loc, {"city": "Adelaide", "country": "AU",
+                               "anycast": False, "source": "name"})
+
+    def test_sufijo_numerico_ignorado(self):
+        loc = self._loc("dnscry.pt-odoh-amsterdam02",
+                        ["dnscry.pt Amsterdam 02 ODoH target."])
+        self.assertEqual(loc["city"], "Amsterdam")
+        self.assertEqual(loc["country"], "NL")
+
+    def test_anycast_por_texto(self):
+        loc = self._loc("odoh-cloudflare", ["Cloudflare ODoH target.",
+                                            "Available through servers in multiple "
+                                            "locations around the world."])
+        self.assertTrue(loc["anycast"])
+        self.assertIsNone(loc["country"])
+        self.assertEqual(loc["source"], "description")
+
+    def test_pais_por_texto(self):
+        loc = self._loc("odohrelay-numa", ["Numa ODoH relay.",
+                                           "Run by the Numa project on Hetzner in "
+                                           "Falkenstein, Germany."])
+        self.assertEqual(loc["country"], "DE")
+        self.assertEqual(loc["source"], "description")
+
+    def test_sin_datos_de_ubicacion(self):
+        loc = self._loc("odoh-snowstorm", ["Snowstorm ODoH target.",
+                                           "Hosted by Snowstorm. No logs."])
+        self.assertEqual(loc, {"city": None, "country": None,
+                               "anycast": False, "source": "unknown"})
+
+    def test_ciudad_sin_tabla_da_pais_nulo(self):
+        loc = self._loc("dnscry.pt-odoh-nuevaciudad",
+                        ["dnscry.pt Nuevaciudad ODoH target."])
+        self.assertEqual(loc["city"], "Nuevaciudad")
+        self.assertIsNone(loc["country"])
+
+    def test_tabla_cobertura_y_formato(self):
+        self.assertGreater(len(self.locations), 100)
+        for key, info in self.locations.items():
+            self.assertEqual(key, key.lower())
+            self.assertRegex(info["country"], r"^[A-Z]{2}$")
+
+    def test_linea_ubicacion_markdown(self):
+        self.assertEqual(bl._location_line(
+            {"location": {"city": "Adelaide", "country": "AU"}}), "Adelaide, AU")
+        self.assertEqual(bl._location_line(
+            {"location": {"country": "DE"}}), "DE")
+        self.assertIn("anycast", bl._location_line(
+            {"location": {"anycast": True}}))
+        self.assertEqual(bl._location_line({}), "desconocida")
 
 
 if __name__ == "__main__":

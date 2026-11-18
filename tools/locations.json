@@ -1,0 +1,332 @@
+{
+  "adelaide": {
+    "country": "AU"
+  },
+  "allendale": {
+    "country": "US"
+  },
+  "allentown": {
+    "country": "US"
+  },
+  "amsterdam": {
+    "country": "NL"
+  },
+  "ashburn": {
+    "country": "US"
+  },
+  "atlanta": {
+    "country": "US"
+  },
+  "auckland": {
+    "country": "NZ"
+  },
+  "bengaluru": {
+    "country": "IN"
+  },
+  "berkeley springs": {
+    "country": "US"
+  },
+  "bratislava": {
+    "country": "SK"
+  },
+  "bremen": {
+    "country": "DE"
+  },
+  "brisbane": {
+    "country": "AU"
+  },
+  "bucharest": {
+    "country": "RO"
+  },
+  "calgary": {
+    "country": "CA"
+  },
+  "cape town": {
+    "country": "ZA"
+  },
+  "chicago": {
+    "country": "US"
+  },
+  "chisinau": {
+    "country": "MD"
+  },
+  "copenhagen": {
+    "country": "DK"
+  },
+  "coventry": {
+    "country": "GB"
+  },
+  "dallas": {
+    "country": "US"
+  },
+  "denver": {
+    "country": "US"
+  },
+  "detroit": {
+    "country": "US"
+  },
+  "dhaka": {
+    "country": "BD"
+  },
+  "dublin": {
+    "country": "IE"
+  },
+  "dusseldorf": {
+    "country": "DE"
+  },
+  "ebene city": {
+    "country": "MU"
+  },
+  "eygelshoven": {
+    "country": "NL"
+  },
+  "flint": {
+    "country": "US"
+  },
+  "frankfurt": {
+    "country": "DE"
+  },
+  "fremont": {
+    "country": "US"
+  },
+  "gdansk": {
+    "country": "PL"
+  },
+  "geneva": {
+    "country": "CH"
+  },
+  "grand rapids": {
+    "country": "US"
+  },
+  "hafnarfjordur": {
+    "country": "IS"
+  },
+  "halifax": {
+    "country": "CA"
+  },
+  "hanoi": {
+    "country": "VN"
+  },
+  "helsinki": {
+    "country": "FI"
+  },
+  "ho-chi-minh city": {
+    "country": "VN"
+  },
+  "hong kong": {
+    "country": "HK"
+  },
+  "houston": {
+    "country": "US"
+  },
+  "hudiksvall": {
+    "country": "SE"
+  },
+  "ikeja": {
+    "country": "NG"
+  },
+  "indianapolis": {
+    "country": "US"
+  },
+  "islamabad": {
+    "country": "PK"
+  },
+  "istanbul": {
+    "country": "TR"
+  },
+  "jacksonville": {
+    "country": "US"
+  },
+  "jakarta": {
+    "country": "ID"
+  },
+  "johannesburg": {
+    "country": "ZA"
+  },
+  "johor": {
+    "country": "MY"
+  },
+  "kansas city": {
+    "country": "US"
+  },
+  "kyiv": {
+    "country": "UA"
+  },
+  "las vegas": {
+    "country": "US"
+  },
+  "liberty lake": {
+    "country": "US"
+  },
+  "lisbon": {
+    "country": "PT"
+  },
+  "london": {
+    "country": "GB"
+  },
+  "los angeles": {
+    "country": "US"
+  },
+  "madrid": {
+    "country": "ES"
+  },
+  "manchester": {
+    "country": "GB"
+  },
+  "marseille": {
+    "country": "FR"
+  },
+  "melbourne": {
+    "country": "AU"
+  },
+  "miami": {
+    "country": "US"
+  },
+  "milan": {
+    "country": "IT"
+  },
+  "molln": {
+    "country": "DE"
+  },
+  "montreal": {
+    "country": "CA"
+  },
+  "moscow": {
+    "country": "RU"
+  },
+  "mumbai": {
+    "country": "IN"
+  },
+  "munich": {
+    "country": "DE"
+  },
+  "new york": {
+    "country": "US"
+  },
+  "newcastle": {
+    "country": "GB"
+  },
+  "nuremberg": {
+    "country": "DE"
+  },
+  "ogden": {
+    "country": "US"
+  },
+  "oradea": {
+    "country": "RO"
+  },
+  "ottoville": {
+    "country": "US"
+  },
+  "paris": {
+    "country": "FR"
+  },
+  "perth": {
+    "country": "AU"
+  },
+  "phoenix": {
+    "country": "US"
+  },
+  "port edwards": {
+    "country": "US"
+  },
+  "portland": {
+    "country": "US"
+  },
+  "prague": {
+    "country": "CZ"
+  },
+  "redditch": {
+    "country": "GB"
+  },
+  "riga": {
+    "country": "LV"
+  },
+  "salt lake city": {
+    "country": "US"
+  },
+  "san jose": {
+    "country": "US"
+  },
+  "sandefjord": {
+    "country": "NO"
+  },
+  "santa clara": {
+    "country": "US"
+  },
+  "sao paulo": {
+    "country": "BR"
+  },
+  "seattle": {
+    "country": "US"
+  },
+  "seoul": {
+    "country": "KR"
+  },
+  "singapore": {
+    "country": "SG"
+  },
+  "sofia": {
+    "country": "BG"
+  },
+  "spokane": {
+    "country": "US"
+  },
+  "stockholm": {
+    "country": "SE"
+  },
+  "sydney": {
+    "country": "AU"
+  },
+  "taipeh": {
+    "country": "TW"
+  },
+  "tallinn": {
+    "country": "EE"
+  },
+  "tampa": {
+    "country": "US"
+  },
+  "taos": {
+    "country": "US"
+  },
+  "tbilisi": {
+    "country": "GE"
+  },
+  "thessaloniki": {
+    "country": "GR"
+  },
+  "timisoara": {
+    "country": "RO"
+  },
+  "tirana": {
+    "country": "AL"
+  },
+  "tokyo": {
+    "country": "JP"
+  },
+  "toronto": {
+    "country": "CA"
+  },
+  "tuusula": {
+    "country": "FI"
+  },
+  "valdivia": {
+    "country": "CL"
+  },
+  "vancouver": {
+    "country": "CA"
+  },
+  "vienna": {
+    "country": "AT"
+  },
+  "vilnius": {
+    "country": "LT"
+  },
+  "warsaw": {
+    "country": "PL"
+  },
+  "zurich": {
+    "country": "CH"
+  }
+}
