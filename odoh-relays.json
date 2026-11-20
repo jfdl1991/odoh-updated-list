@@ -4,7 +4,7 @@
   "source": "DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md",
   "source_sha256": "f4718be434cc838e929aa10d4f3cb18d645f8ae4bcfa09ba3f88c4906cd70652",
   "upstream_commit": "fb9de448adf22c1bd4c2431a246bb6fa3e4a1d67",
-  "generated_at": "2026-11-20T02:54:00+00:00",
+  "generated_at": "2026-11-20T03:11:37+00:00",
   "count": 3,
   "entries": [
     {

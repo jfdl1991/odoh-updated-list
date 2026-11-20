@@ -144,6 +144,8 @@ class TestEndToEnd(unittest.TestCase):
                 md = fh.read()
             self.assertIn("## target-uno", md)
             self.assertIn("- URL: https://adl01.dnscry.pt/dns-query", md)
+            # el .md es la lista en formato https, no una copia de los sdns
+            self.assertNotIn("sdns://", md)
 
 
 class TestLocation(unittest.TestCase):

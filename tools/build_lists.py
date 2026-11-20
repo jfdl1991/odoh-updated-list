@@ -320,8 +320,7 @@ def write_markdown(list_key: str, cfg: dict, entries: list[dict], outdir: str) -
                 fh.write("\n")
             fh.write(f"- URL: {entry['url']}\n")
             fh.write(f"- Flags: {_flags_line(entry)}\n")
-            fh.write(f"- Ubicacion: {_location_line(entry)}\n")
-            fh.write(f"- Stamp: `{entry['stamp']}`\n\n")
+            fh.write(f"- Ubicacion: {_location_line(entry)}\n\n")
 
 
 def write_txt(list_key: str, entries: list[dict], outdir: str) -> None:
