@@ -61,13 +61,6 @@ LISTS: dict[str, dict] = {
     },
 }
 
-# Campos del formato de stamp que no se exponen en las salidas: el protocolo
-# queda en `kind` (target/proxy, terminologia del RFC 9230), `props` se desglosa
-# en dnssec/no_logs/no_filter, y addr/hashes no existen en ODoH (solo son utiles
-# en DNSCrypt/DoH: IP de bootstrap y cert pinning). El stamp original queda en
-# el campo `stamp`, asi que nada se pierde.
-INTERNAL_STAMP_FIELDS = ("proto", "props", "addr", "hashes")
-
 SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")
 STAMP_RE = re.compile(r"^sdns://[A-Za-z0-9_\-]+=*\s*$")
 CITY_RE = re.compile(r"^dnscry\.pt\s+(.+?)(?:\s+\d{2})?\s+ODoH target\.$")
@@ -280,8 +273,6 @@ def parse_list_md(text: str, kind: str) -> list[dict]:
     for entry in entries:
         if entry["stamp"]:
             entry.update(decode_stamp(entry["stamp"]))
-            for field in INTERNAL_STAMP_FIELDS:
-                entry.pop(field, None)
     return entries
 
 

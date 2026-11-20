@@ -133,9 +133,11 @@ class TestEndToEnd(unittest.TestCase):
             self.assertEqual(data["count"], 2)
             self.assertEqual(data["source_sha256"], sha)
             self.assertEqual(data["entries"][0]["hostname"], "adl01.dnscry.pt")
-            # los campos internos del formato stamp no se exponen
-            for key in ("proto", "props", "addr", "hashes"):
-                self.assertNotIn(key, data["entries"][0])
+            # los datos del stamp original tambien se exponen (estilo DNSCrypt)
+            self.assertEqual(data["entries"][0]["proto"], 0x05)
+            self.assertEqual(data["entries"][0]["props"], 7)
+            self.assertEqual(data["entries"][0]["addr"], "")
+            self.assertEqual(data["entries"][0]["hashes"], [])
             self.assertEqual(data["entries"][0]["kind"], "target")
 
             with open(os.path.join(tmp, "odoh-servers.md"), encoding="utf-8") as fh:

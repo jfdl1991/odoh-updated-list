@@ -4,7 +4,7 @@
     "repo": "dnscrypt-resolvers",
     "ref": "master"
   },
-  "generated_at": "2026-11-18T10:38:45+00:00",
+  "generated_at": "2026-11-20T02:54:01+00:00",
   "lists": {
     "odoh-relays": {
       "raw_sha256": "f4718be434cc838e929aa10d4f3cb18d645f8ae4bcfa09ba3f88c4906cd70652",
